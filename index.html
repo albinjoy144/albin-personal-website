@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Albin Joy — UI/UX Designer | Digital Products & Design Systems</title>
+  <meta name="description" content="Portfolio of Albin Joy, a UI/UX Designer with 4+ years of experience delivering responsive digital products, design systems, and mobile applications." />
+  <meta name="keywords" content="Albin Joy, UI/UX Designer, Product Designer, Figma, Design Systems, Mobile App UI, Kozhikode Kerala India, Portfolio" />
+  <meta name="author" content="Albin Joy" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Albin Joy — UI/UX Designer" />
+  <meta property="og:description" content="Delivering high-fidelity interactive digital experiences, design systems, and mobile applications." />
+  <meta property="og:image" content="assets/images/albin_joy.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+
+  <!-- Phosphor Icons for Crisp Modern Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glowing Mesh Background -->
+  <div class="ambient-glow" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="Albin Joy Portfolio Home">
+        <div class="logo-badge">AJ</div>
+        <span>Albin Joy</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills & Tools</a></li>
+          <li><a href="#projects" class="nav-link">Case Studies</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Available for Roles</span>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Let's Talk</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-greeting">
+              <i class="ph-bold ph-sparkle"></i>
+              <span>UI/UX DESIGNER & PRODUCT STRATEGIST</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Crafting <span class="gradient-text">Intuitive Products</span> & Scalable Design Systems.
+            </h1>
+
+            <p class="hero-subtitle">
+              Hi, I'm <strong>Albin Joy</strong>. A UI/UX Designer with <strong>4+ years of experience</strong> delivering responsive digital products. Skilled in end-to-end UX research, wireframing, high-fidelity interactive prototyping, and design systems in Agile environments.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Case Studies</span>
+                <i class="ph-bold ph-arrow-down-right"></i>
+              </a>
+              <a href="https://linkedin.com/in/albin-joy" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="ph-bold ph-linkedin-logo"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="https://albinjoy.framer.website/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="ph-bold ph-globe"></i>
+                <span>Framer Site</span>
+              </a>
+            </div>
+
+            <!-- Experience Stats Counter -->
+            <div class="hero-stats-strip">
+              <div class="stat-item">
+                <div class="stat-number" data-target="4" data-suffix="+">0+</div>
+                <div class="stat-label">Years of Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="25" data-suffix="+">0+</div>
+                <div class="stat-label">Delivered Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-target="3" data-suffix=" Companies">0</div>
+                <div class="stat-label">Software Firms</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Designer Showcase Image & Floating Chips -->
+          <div class="hero-visual">
+            <div class="avatar-wrapper">
+              <div class="avatar-inner">
+                <img src="assets/images/albin_joy.jpg" alt="Albin Joy UI/UX Designer" class="avatar-img" />
+              </div>
+            </div>
+
+            <!-- Floating Badge 1: Figma & Prototyping -->
+            <div class="floating-chip floating-chip-1">
+              <div class="chip-icon figma">
+                <i class="ph-bold ph-figma-logo"></i>
+              </div>
+              <div class="chip-text">
+                <h5>Figma Mastery</h5>
+                <p>Interactive Prototyping</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Design Systems -->
+            <div class="floating-chip floating-chip-2">
+              <div class="chip-icon system">
+                <i class="ph-bold ph-diamonds-four"></i>
+              </div>
+              <div class="chip-text">
+                <h5>Design Systems</h5>
+                <p>Tokens & Scalable UI</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & CORE PHILOSOPHY SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="ph-bold ph-user"></i>
+            <span>About Albin Joy</span>
+          </div>
+          <h2 class="section-title">Bridging Human Psychology & <span class="gradient-text">Pixel-Perfect</span> Craft</h2>
+          <p class="section-desc">
+            With a solid foundation in Computer Science (M.Sc. & B.Sc.) coupled with specialized Web Design training, I bridge the gap between creative visual design and technical engineering feasibility.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-card">
+            <h3>My Design Philosophy</h3>
+            <p>
+              Great digital products are born at the intersection of deep user empathy, rigorous data analytics, and crisp visual hierarchy. I advocate for user-centered design processes that solve real business bottlenecks.
+            </p>
+            <p>
+              Over the past 4+ years, I have navigated high-growth Agile environments—leading design from early discovery and wireframing to component systems and friction-free developer handoffs.
+            </p>
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; color: #a5b4fc; font-size: 0.9rem;">
+                <i class="ph-fill ph-check-circle" style="color: var(--accent-cyan);"></i>
+                <span>User-First UX Discovery</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; color: #a5b4fc; font-size: 0.9rem;">
+                <i class="ph-fill ph-check-circle" style="color: var(--accent-cyan);"></i>
+                <span>WCAG AA Accessibility</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.5rem; color: #a5b4fc; font-size: 0.9rem;">
+                <i class="ph-fill ph-check-circle" style="color: var(--accent-cyan);"></i>
+                <span>Fast Dev Handoffs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card about-card">
+            <h3>Quick Details</h3>
+            <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--card-border); padding-bottom: 0.75rem;">
+                <span style="color: var(--text-muted);">Current Role</span>
+                <span style="font-weight: 600;">UI/UX Designer</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--card-border); padding-bottom: 0.75rem;">
+                <span style="color: var(--text-muted);">Location</span>
+                <span style="font-weight: 600;">Kozhikode, Kerala, India</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--card-border); padding-bottom: 0.75rem;">
+                <span style="color: var(--text-muted);">Experience</span>
+                <span style="font-weight: 600; color: var(--accent-emerald);">4+ Years (2021 – Present)</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--card-border); padding-bottom: 0.75rem;">
+                <span style="color: var(--text-muted);">Education</span>
+                <span style="font-weight: 600;">M.Sc. & B.Sc. Computer Science</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Email</span>
+                <span style="font-weight: 600; color: var(--accent-cyan);">albinjoy69@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Core Competencies -->
+        <div class="competencies-grid">
+          <div class="glass-card comp-card">
+            <div class="comp-icon-box">
+              <i class="ph-bold ph-browsers"></i>
+            </div>
+            <h4>Website & Web Apps</h4>
+            <p>Responsive, conversion-optimized interfaces tailored for modern browsers and high engagement.</p>
+          </div>
+
+          <div class="glass-card comp-card">
+            <div class="comp-icon-box">
+              <i class="ph-bold ph-device-mobile"></i>
+            </div>
+            <h4>Mobile App UI</h4>
+            <p>Native iOS & Android mobile app experiences following Apple HIG and Material 3 design systems.</p>
+          </div>
+
+          <div class="glass-card comp-card">
+            <div class="comp-icon-box">
+              <i class="ph-bold ph-stack"></i>
+            </div>
+            <h4>Design Systems</h4>
+            <p>Scalable token architectures, reusable component libraries, and comprehensive documentation.</p>
+          </div>
+
+          <div class="glass-card comp-card">
+            <div class="comp-icon-box">
+              <i class="ph-bold ph-git-branch"></i>
+            </div>
+            <h4>Wireframes & Prototypes</h4>
+            <p>Interactive Figma prototypes, user journeys, sitemaps, and data-backed usability iterations.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLS MATRIX -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="ph-bold ph-wrench"></i>
+            <span>Capabilities & Stack</span>
+          </div>
+          <h2 class="section-title">Skills & <span class="gradient-text">Tools Matrix</span></h2>
+          <p class="section-desc">
+            Equipped with modern design software, AI acceleration tools, and user research methodologies.
+          </p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Skills Grid -->
+          <div class="glass-card skills-column">
+            <h3>
+              <i class="ph-bold ph-paint-brush" style="color: var(--accent-primary);"></i>
+              <span>Core Design Disciplines</span>
+            </h3>
+            <div class="skills-tags-grid">
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Website Design</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Responsive Web Design</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Mobile App Design (iOS / Android)</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Wireframing & Storyboarding</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Interactive Prototyping</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Mockup & Hi-Fi UI Design</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Visual Brand Identity</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> User Flows & Sitemaps</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> WCAG Accessibility Standards</span>
+              <span class="skill-pill"><i class="ph-bold ph-check"></i> Design-to-Dev Handoff</span>
+            </div>
+          </div>
+
+          <!-- Tools Grid -->
+          <div class="glass-card skills-column">
+            <h3>
+              <i class="ph-bold ph-cpu" style="color: var(--accent-cyan);"></i>
+              <span>Software & AI Toolkit</span>
+            </h3>
+            <div class="tools-grid">
+              
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(242, 78, 30, 0.15); color: #f24e1e;">
+                  <i class="ph-bold ph-figma-logo"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Figma</h4>
+                  <p>Design Systems & Prototyping</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(255, 97, 246, 0.15); color: #ff61f6;">
+                  <i class="ph-bold ph-cube"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Adobe XD</h4>
+                  <p>Wireframing & UI Kits</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(49, 168, 255, 0.15); color: #31a8ff;">
+                  <i class="ph-bold ph-image"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Photoshop</h4>
+                  <p>Visual Assets & Retouching</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(255, 154, 0, 0.15); color: #ff9a00;">
+                  <i class="ph-bold ph-pen-nib"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Illustrator</h4>
+                  <p>Vectors & Iconography</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+                  <i class="ph-bold ph-sparkle"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Google Stitch</h4>
+                  <p>UI Assembly & Flows</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">
+                  <i class="ph-bold ph-rocket-launch"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Google Antigravity</h4>
+                  <p>Advanced Prototyping</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(16, 163, 127, 0.15); color: #10a37f;">
+                  <i class="ph-bold ph-robot"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>ChatGPT</h4>
+                  <p>UX Copy & Prompt Research</p>
+                </div>
+              </div>
+
+              <div class="tool-card">
+                <div class="tool-icon" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa;">
+                  <i class="ph-bold ph-lightning"></i>
+                </div>
+                <div class="tool-info">
+                  <h4>Google Gemini</h4>
+                  <p>AI Strategy & Ideation</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS & CASE STUDIES -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="ph-bold ph-folder-open"></i>
+            <span>Selected Work</span>
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">Case Studies</span></h2>
+          <p class="section-desc">
+            Explore detailed product designs, scalable component libraries, and interactive mobile apps. Click any project to open full case study details.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="saas">SaaS & Dashboards</button>
+          <button class="filter-btn" data-filter="ai">AI Platforms</button>
+        </div>
+
+        <!-- Dynamic Projects Container -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated dynamically via js/projects-data.js and js/main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="ph-bold ph-briefcase"></i>
+            <span>Professional Career</span>
+          </div>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-desc">
+            A track record of building impactful software products across fast-paced tech companies.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience 1: Insasoft Technologies -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Designer</h3>
+                  <div class="company-name">Insasoft Technologies LLC</div>
+                </div>
+                <div class="timeline-date">Oct 2025 – Apr 2026</div>
+              </div>
+              <ul class="timeline-points">
+                <li>Led end-to-end design processes for software products, taking projects from initial discovery and user research to final high-fidelity developer handoffs.</li>
+                <li>Built and maintained scalable design systems and component libraries to ensure visual consistency and accelerate development workflows across multiple projects.</li>
+                <li>Optimized user flows and interface elements using data analytics and user feedback, improving conversion rates and task completion speed.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2: Glaubetech Inventions -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Designer</h3>
+                  <div class="company-name">Glaubetech Inventions</div>
+                </div>
+                <div class="timeline-date">Apr 2023 – Jan 2025</div>
+              </div>
+              <ul class="timeline-points">
+                <li>Analyzed emerging design trends and integrated modern design patterns to maintain product competitiveness.</li>
+                <li>Facilitated cross-functional collaboration with developers and product managers to streamline design-to-development handoffs and ensure high-quality execution.</li>
+                <li>Developed comprehensive wireframes, storyboards, and sitemaps to define intuitive user journeys and optimize information architecture for complex applications.</li>
+                <li>Executed rapid prototyping in Figma to validate concepts and collect early stakeholder feedback.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3: YouGo Payway -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">UI/UX Designer</h3>
+                  <div class="company-name">YouGo Payway</div>
+                </div>
+                <div class="timeline-date">Jan 2021 – Jan 2023</div>
+              </div>
+              <ul class="timeline-points">
+                <li>Spearheaded UI design for iOS and Android mobile applications, ensuring strict adherence to platform-specific guidelines and WCAG accessibility standards.</li>
+                <li>Conducted user and market research to identify core user pain points, translating insights into actionable, data-driven design improvements.</li>
+                <li>Designed cohesive visual brand identities by producing high-impact logos, web graphics, and marketing assets.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION & QUALIFICATIONS -->
+    <section class="section" id="education" style="padding-top: 2rem;">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="ph-bold ph-graduation-cap"></i>
+            <span>Academic Background</span>
+          </div>
+          <h2 class="section-title">Education & <span class="gradient-text">Training</span></h2>
+        </div>
+
+        <div class="education-grid">
+          
+          <div class="glass-card edu-card">
+            <div class="edu-year">Mar 2019 – Aug 2019</div>
+            <h3 class="edu-degree">Graphic and Web Design Course</h3>
+            <div class="edu-institution">Image Creative Education</div>
+          </div>
+
+          <div class="glass-card edu-card">
+            <div class="edu-year">Dec 2016 – Jun 2018</div>
+            <h3 class="edu-degree">M.Sc. Computer Science</h3>
+            <div class="edu-institution">University of Calicut</div>
+          </div>
+
+          <div class="glass-card edu-card">
+            <div class="edu-year">Nov 2013 – Apr 2016</div>
+            <h3 class="edu-degree">B.Sc. Computer Science</h3>
+            <div class="edu-institution">University of Calicut</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">
+            <i class="ph-bold ph-paper-plane-tilt"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Let's Create Something <span class="gradient-text">Extraordinary</span></h2>
+          <p class="section-desc">
+            Open for full-time UI/UX design roles, product consulting, and freelance collaborations.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info & Direct Links -->
+          <div class="glass-card contact-info-card">
+            <h3>Direct Channels</h3>
+            <p>Feel free to reach out via email, phone, or explore my live portfolios on Behance and Framer.</p>
+
+            <div class="contact-channels">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph-bold ph-envelope-simple"></i>
+                </div>
+                <div class="contact-meta">
+                  <h5>Email Address</h5>
+                  <div style="display: flex; align-items: center;">
+                    <a href="mailto:albinjoy69@gmail.com">albinjoy69@gmail.com</a>
+                    <button class="copy-email-btn" id="copyEmailBtn" title="Copy email to clipboard">
+                      <i class="ph-bold ph-copy"></i>
+                      <span>Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph-bold ph-phone-call"></i>
+                </div>
+                <div class="contact-meta">
+                  <h5>Phone / WhatsApp</h5>
+                  <a href="tel:+919048622044">+91 9048622044</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph-bold ph-map-pin"></i>
+                </div>
+                <div class="contact-meta">
+                  <h5>Location</h5>
+                  <p>Kozhikode, Kerala, India</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="https://linkedin.com/in/albin-joy" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="ph-bold ph-linkedin-logo" style="color: #0077b5;"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://behance.net/albinalbinjoy" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="ph-bold ph-behance-logo" style="color: #0057ff;"></i>
+                <span>Behance</span>
+              </a>
+              <a href="https://albinjoy.framer.website/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="ph-bold ph-framer-logo" style="color: #0099ff;"></i>
+                <span>Framer</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="glass-card contact-form-card">
+            <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="senderName">Your Name</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Sarah Connor" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderEmail">Email Address</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="e.g. sarah@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="senderMessage">Project Details or Inquiry</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Tell me about your product vision, project scope, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <i class="ph-bold ph-paper-plane-right"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Case Study Modal Dialog -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">
+        <i class="ph-bold ph-x"></i>
+      </button>
+      <div id="modalDynamicContent">
+        <!-- Injected dynamically via js/main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">
+          <div class="logo-badge">AJ</div>
+          <div>
+            <div style="font-size: 1.25rem; font-weight: 800;">Albin Joy</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-body); font-weight: 500;">UI/UX Designer</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="#about" class="nav-link" style="font-size: 0.85rem;">About</a>
+          <a href="#skills" class="nav-link" style="font-size: 0.85rem;">Skills</a>
+          <a href="#projects" class="nav-link" style="font-size: 0.85rem;">Case Studies</a>
+          <a href="#experience" class="nav-link" style="font-size: 0.85rem;">Experience</a>
+          <a href="#contact" class="nav-link" style="font-size: 0.85rem;">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Albin Joy. All rights reserved. Crafted with precision & user-centered empathy.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="https://linkedin.com/in/albin-joy" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);"><i class="ph-bold ph-linkedin-logo" style="font-size: 1.2rem;"></i></a>
+          <a href="https://behance.net/albinalbinjoy" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);"><i class="ph-bold ph-behance-logo" style="font-size: 1.2rem;"></i></a>
+          <a href="https://albinjoy.framer.website/" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);"><i class="ph-bold ph-globe" style="font-size: 1.2rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
