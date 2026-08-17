@@ -1545,6 +1545,9 @@ a {
   .about-grid {
     grid-template-columns: 1fr;
   }
+  .competencies-grid {
+    grid-template-columns: 1fr;
+  }
   .tools-grid {
     grid-template-columns: 1fr;
   }
