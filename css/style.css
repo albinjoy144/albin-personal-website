@@ -944,7 +944,7 @@ a {
 }
 
 .project-content {
-  padding: 1.8rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
