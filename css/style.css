@@ -1157,11 +1157,14 @@ a {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 3.5rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-info-card {
   padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .contact-info-card h3 {
@@ -1173,7 +1176,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin: 2rem 0 2.5rem;
+  margin: 2rem 0 auto;
 }
 
 .contact-item {
@@ -1227,6 +1230,8 @@ a {
 .social-links {
   display: flex;
   gap: 0.85rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .social-btn {
@@ -1250,6 +1255,25 @@ a {
 /* Contact Form */
 .contact-form-card {
   padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#contactForm .form-group:nth-child(3) {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactForm .form-textarea {
+  flex-grow: 1;
 }
 
 .form-group {
