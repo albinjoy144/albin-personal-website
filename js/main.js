@@ -230,6 +230,18 @@ function openProjectModal(project) {
           ${project.tools.map(tool => `<span class="skill-pill" style="padding: 0.4rem 1rem; font-size: 0.85rem;">${tool}</span>`).join('')}
         </div>
       </div>
+
+      ${project.liveUrl ? `
+        <div style="margin-top: 2.5rem; text-align: center;">
+          <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.9rem 2.2rem; font-size: 1rem;">
+            <span>Visit Live Website (${project.liveUrl.replace('https://', '')})</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      ` : ''}
     </div>
   `;
 
