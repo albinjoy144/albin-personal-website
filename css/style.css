@@ -471,6 +471,12 @@ a {
   font-size: 0.8rem;
   font-weight: 600;
   color: #34d399;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.mobile-only-status {
+  display: none;
 }
 
 .status-dot {
@@ -1501,6 +1507,20 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .header-status-pill {
+    display: none;
+  }
+  .mobile-only-status {
+    display: block;
+    margin-bottom: 0.5rem;
+    align-self: center;
+  }
+  .nav-actions {
+    gap: 0.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -1510,7 +1530,7 @@ a {
     background: rgba(7, 9, 14, 0.96);
     backdrop-filter: blur(20px);
     flex-direction: column;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     gap: 1.5rem;
     border-bottom: 1px solid var(--card-border);
     clip-path: circle(0% at 100% 0);
@@ -1541,5 +1561,30 @@ a {
   .modal-grid-details {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 1.15rem;
+  }
+  .logo-badge {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+  }
+  .nav-actions {
+    gap: 0.5rem;
+  }
+  .nav-cta-btn {
+    padding: 0.5rem 0.9rem !important;
+    font-size: 0.8rem !important;
+  }
+  .hero-section {
+    padding-top: calc(var(--header-height) + 1.5rem);
+    padding-bottom: 3.5rem;
+  }
+  .hero-title {
+    font-size: 2.2rem;
   }
 }
