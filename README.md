@@ -51,6 +51,6 @@ Then visit [http://localhost:3000](http://localhost:3000) in your browser.
 - **Email**: albinjoy69@gmail.com
 - **Phone**: +91 9048622044
 - **Location**: Kozhikode, Kerala, India
-- **LinkedIn**: [linkedin.com/in/albin-joy](https://linkedin.com/in/albin-joy)
+- **LinkedIn**: [linkedin.com/in/albin-joy-ab37a2191](https://www.linkedin.com/in/albin-joy-ab37a2191/)
 - **Behance**: [behance.net/albinalbinjoy](https://behance.net/albinalbinjoy)
 - **Framer**: [albinjoy.framer.website](https://albinjoy.framer.website/)
