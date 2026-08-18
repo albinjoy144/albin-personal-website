@@ -11,7 +11,7 @@ A modern, high-performance personal portfolio website for **Albin Joy**, UI/UX D
 - **Dynamic Micro-Interactions**: Ambient cursor glow, smooth scrolling, real-time stats counter, and floating tool chips.
 - **Experience Timeline**: Detailed career journey across Insasoft Technologies LLC, Glaubetech Inventions, and YouGo Payway.
 - **Skills & Tool Matrix**: Showcasing expertise across Figma, Adobe XD, Photoshop, Illustrator, Google Stitch, Google Antigravity, ChatGPT, and Gemini.
-- **Quick Contact Hub**: 1-click email copy with instant toast notifications, interactive contact form, and direct links to LinkedIn, Behance, and Framer.
+- **Quick Contact Hub**: 1-click email copy with instant toast notifications, interactive contact form, and direct links to LinkedIn and Behance.
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile displays.
 
 ---
@@ -53,4 +53,3 @@ Then visit [http://localhost:3000](http://localhost:3000) in your browser.
 - **Location**: Kozhikode, Kerala, India
 - **LinkedIn**: [linkedin.com/in/albin-joy-ab37a2191](https://www.linkedin.com/in/albin-joy-ab37a2191/)
 - **Behance**: [behance.net/albinalbinjoy](https://behance.net/albinalbinjoy)
-- **Framer**: [albinjoy.framer.website](https://albinjoy.framer.website/)
