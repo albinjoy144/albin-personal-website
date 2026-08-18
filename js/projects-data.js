@@ -45,7 +45,7 @@ const portfolioProjects = [
     category: "mobile",
     tags: ["Behance Case Study", "Mobile App", "Travel & Transit", "UI/UX Redesign"],
     image: "assets/images/aura_ai.jpg",
-    liveUrl: "https://www.behance.net/gallery/231112979/Company-Website-Redesign",
+    liveUrl: "https://www.behance.net/gallery/88134175/KSRTC-APP-UI-REDESIGN",
     summary: "Complete UX research and mobile app redesign for Kerala State Road Transport Corporation (KSRTC) Bus Ticket Booking, streamlining search, live tracking, and seat reservation.",
     metric: "Featured on Behance",
     client: "KSRTC Bus Booking Redesign",
