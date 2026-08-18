@@ -40,20 +40,21 @@ const portfolioProjects = [
     impact: "Empowered 100+ business clients across 4 countries with high-converting digital portals and accelerated cross-functional developer delivery by 50%."
   },
   {
-    id: "glaubetech-ai",
-    title: "AURA — Creative AI Design Platform",
-    category: "ai",
-    tags: ["AI Platform", "Visual Design", "Rapid Prototyping", "Web & Mobile"],
+    id: "ksrtc-bus-booking",
+    title: "KSRTC — Bus Ticket Booking App Redesign",
+    category: "mobile",
+    tags: ["Behance Case Study", "Mobile App", "Travel & Transit", "UI/UX Redesign"],
     image: "assets/images/aura_ai.jpg",
-    summary: "Futuristic creative generative AI studio interface featuring real-time prompt generation, canvas layer controls, and dark glassmorphic styling.",
-    metric: "15k+ Daily Creations",
-    client: "Glaubetech Inventions",
-    role: "Product & Interaction Designer",
-    year: "2023 – 2025",
-    tools: ["Figma", "Photoshop", "ChatGPT", "Gemini"],
-    overview: "Developed comprehensive wireframes, storyboards, and interactive prototypes to define intuitive user journeys for generative content creators.",
-    challenge: "Complex prompt engineering controls often overwhelmed non-technical creators, hindering adoption and trial conversions.",
-    solution: "Crafted a contextual sidebar with guided prompt chips, real-time visual parameter sliders, and non-destructive layer editing workspace.",
-    impact: "Boosted creative workflow completion rates by 38% and facilitated smooth cross-functional developer handoffs."
+    liveUrl: "https://www.behance.net/gallery/231112979/Company-Website-Redesign",
+    summary: "Complete UX research and mobile app redesign for Kerala State Road Transport Corporation (KSRTC) Bus Ticket Booking, streamlining search, live tracking, and seat reservation.",
+    metric: "Featured on Behance",
+    client: "KSRTC Bus Booking Redesign",
+    role: "UI/UX & Product Designer",
+    year: "2024 – 2025",
+    tools: ["Figma", "Design Systems", "Prototyping", "User Research", "Wireframing"],
+    overview: "Conducted end-to-end user research, competitor analysis, and mobile interface redesign for the Kerala State Road Transport Corporation (KSRTC) bus booking app. Reimagined the passenger journey from route discovery to digital ticket management with modern Inter typography and high-contrast usability.",
+    challenge: "Legacy transit booking apps suffered from cluttered multi-step booking flows, complex seat selection, hidden bus tracking, and poor screen readability under bright outdoor sunlight.",
+    solution: "Architected an intuitive 5-step booking flow, high-contrast accessible visual palette (#FF3E44 primary, dark/light neutrals), interactive visual seat layout, live bus tracking, and one-tap digital ticket access.",
+    impact: "Streamlined bus search and ticket booking journey, improved seat selection clarity, and showcased comprehensive mobile design architecture with high community praise on Behance."
   }
 ];
