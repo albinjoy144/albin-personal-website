@@ -102,7 +102,6 @@ function initProjects() {
       card.innerHTML = `
         <div class="project-img-wrapper">
           <img src="${project.image}" alt="${project.title}" class="project-img" loading="lazy" />
-          <span class="project-overlay-badge">${project.role}</span>
         </div>
         <div class="project-content">
           <div class="project-tags">

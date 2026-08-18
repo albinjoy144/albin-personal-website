@@ -929,20 +929,6 @@ a {
   transform: scale(1.06);
 }
 
-.project-overlay-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.35rem 0.85rem;
-  background: rgba(7, 9, 14, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  border-radius: var(--border-radius-full);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #e2e8f0;
-}
-
 .project-content {
   padding: 1.2rem 0rem 0rem 0rem;
   display: flex;
