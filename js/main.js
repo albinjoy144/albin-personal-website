@@ -345,6 +345,8 @@ function initContactForm() {
           body: formData
         });
 
+        // Trigger confirmation popup modal
+        openConfirmationModal(name, email);
         showToast(`Thank you, ${name}! Your message has been sent successfully.`);
         contactForm.reset();
       } catch (err) {
@@ -356,6 +358,66 @@ function initContactForm() {
         submitBtn.innerHTML = originalBtnContent;
       }
     });
+  }
+
+  // Setup Confirmation Modal Listeners
+  const confirmModal = document.getElementById('confirmationModal');
+  const confirmCloseBtn = document.getElementById('confirmModalCloseBtn');
+  const confirmOkBtn = document.getElementById('confirmModalOkBtn');
+
+  if (confirmCloseBtn) confirmCloseBtn.addEventListener('click', closeConfirmationModal);
+  if (confirmOkBtn) confirmOkBtn.addEventListener('click', closeConfirmationModal);
+  if (confirmModal) {
+    confirmModal.addEventListener('click', (e) => {
+      if (e.target === confirmModal) closeConfirmationModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && confirmModal.classList.contains('active')) {
+        closeConfirmationModal();
+      }
+    });
+  }
+}
+
+/* --- Confirmation Popup Modal Utility --- */
+function openConfirmationModal(name, email) {
+  const modal = document.getElementById('confirmationModal');
+  const messageEl = document.getElementById('confirmModalMessage');
+  const detailsEl = document.getElementById('confirmDetailsBox');
+
+  if (messageEl) {
+    messageEl.innerHTML = `Thank you, <strong>${name}</strong>! Your inquiry has been sent directly to Albin Joy. I will review your project requirements and get in touch with you at <strong style="color: var(--accent-cyan); word-break: break-all;">${email}</strong> shortly.`;
+  }
+
+  if (detailsEl) {
+    detailsEl.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; gap: 0.5rem;">
+        <span style="color: var(--text-muted);">Recipient</span>
+        <strong>Albin Joy</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;">
+        <span style="color: var(--text-muted);">Delivery Status</span>
+        <strong style="color: var(--accent-emerald); display: flex; align-items: center; gap: 0.3rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Sent Successfully
+        </strong>
+      </div>
+    `;
+  }
+
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeConfirmationModal() {
+  const modal = document.getElementById('confirmationModal');
+  if (modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
   }
 }
 

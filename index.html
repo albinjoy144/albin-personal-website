@@ -651,6 +651,30 @@
     </div>
   </div>
 
+  <!-- Form Submission Confirmation Modal -->
+  <div class="modal-backdrop" id="confirmationModal" role="dialog" aria-modal="true" aria-labelledby="confirmModalTitle">
+    <div class="modal-content confirmation-modal-content glass-card">
+      <button class="modal-close" id="confirmModalCloseBtn" aria-label="Close modal">
+        <i class="ph-bold ph-x"></i>
+      </button>
+      <div class="confirmation-modal-body">
+        <div class="confirm-icon-wrapper">
+          <div class="confirm-icon-ring"></div>
+          <i class="ph-bold ph-check"></i>
+        </div>
+        <h3 id="confirmModalTitle" class="confirm-title">Message Sent Successfully!</h3>
+        <p id="confirmModalMessage" class="confirm-desc">
+          Thank you! Your message has been sent directly to Albin Joy. I will review your inquiry and get back to you shortly.
+        </p>
+        <div class="confirm-details-box" id="confirmDetailsBox"></div>
+        <button type="button" class="btn btn-primary" id="confirmModalOkBtn" style="width: 100%; justify-content: center; padding: 0.9rem 1.5rem;">
+          <span>Great, Thanks!</span>
+          <i class="ph-bold ph-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
