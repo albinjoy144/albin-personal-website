@@ -386,22 +386,22 @@ function openConfirmationModal(name, email) {
   const detailsEl = document.getElementById('confirmDetailsBox');
 
   if (messageEl) {
-    messageEl.innerHTML = `Thank you, <strong>${name}</strong>! Your inquiry has been sent directly to Albin Joy. I will review your project requirements and get in touch with you at <strong style="color: var(--accent-cyan); word-break: break-all;">${email}</strong> shortly.`;
+    messageEl.innerHTML = `Thank you, <strong>${name}</strong>! Your inquiry has been sent directly to Albin Joy. I will review your project requirements and get in touch with you at <strong class="confirm-email-highlight" style="color: #06b6d4; font-weight: 700; white-space: nowrap !important; display: inline-block !important; word-break: keep-all !important; font-size: 0.9em;">${email}</strong> shortly.`;
   }
 
   if (detailsEl) {
     detailsEl.innerHTML = `
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; gap: 0.5rem;">
-        <span style="color: var(--text-muted);">Recipient</span>
-        <strong>Albin Joy</strong>
+      <div class="confirm-details-row" style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%;">
+        <span class="detail-label" style="color: var(--text-muted); font-size: 0.825rem; white-space: nowrap !important; flex-shrink: 0;">Recipient</span>
+        <strong class="detail-value" style="color: var(--text-primary); font-size: 0.825rem; font-weight: 600; white-space: nowrap !important; text-align: right; flex-shrink: 0;">Albin Joy</strong>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;">
-        <span style="color: var(--text-muted);">Delivery Status</span>
-        <strong style="color: var(--accent-emerald); display: flex; align-items: center; gap: 0.3rem;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+      <div class="confirm-details-row" style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%;">
+        <span class="detail-label" style="color: var(--text-muted); font-size: 0.825rem; white-space: nowrap !important; flex-shrink: 0;">Delivery Status</span>
+        <strong class="detail-value status-success" style="color: #10b981; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.28); padding: 0.2rem 0.55rem; border-radius: 9999px; font-size: 0.775rem; font-weight: 600; white-space: nowrap !important; display: inline-flex; align-items: center; gap: 0.35rem; text-align: right; flex-shrink: 0;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
-          Sent Successfully
+          <span style="white-space: nowrap !important;">Sent Successfully</span>
         </strong>
       </div>
     `;

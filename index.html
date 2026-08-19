@@ -23,7 +23,84 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+
+  <!-- Critical Modal Mobile Fixes Inline Override -->
+  <style>
+    .confirmation-modal-content {
+      max-width: 440px !important;
+      width: 100% !important;
+      text-align: center !important;
+      box-sizing: border-box !important;
+    }
+    .confirm-desc {
+      font-size: 0.79rem !important;
+      color: var(--text-secondary) !important;
+      line-height: 1.6 !important;
+      margin-bottom: 1.25rem !important;
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+    }
+    .confirm-email-badge,
+    .confirm-email-highlight,
+    #confirmModalMessage strong,
+    #confirmModalMessage span {
+      word-break: normal !important;
+    }
+    .confirm-email-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 0.4rem !important;
+      color: #06b6d4 !important;
+      background: rgba(6, 182, 212, 0.12) !important;
+      border: 1px solid rgba(6, 182, 212, 0.3) !important;
+      padding: 0.35rem 0.85rem !important;
+      border-radius: 9999px !important;
+      font-size: 0.825rem !important;
+      font-weight: 700 !important;
+      white-space: nowrap !important;
+      margin: 0.2rem auto !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .confirm-details-row {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      width: 100% !important;
+    }
+    .confirm-details-row .detail-label,
+    .confirm-details-row .detail-value,
+    .confirm-details-row span,
+    .confirm-details-row strong {
+      white-space: nowrap !important;
+      flex-shrink: 0 !important;
+    }
+    @media (max-width: 480px) {
+      .modal-backdrop {
+        padding: 0.75rem !important;
+      }
+      .confirmation-modal-content {
+        padding: 1.85rem 1rem 1.5rem !important;
+      }
+      .confirm-desc {
+        font-size: 0.79rem !important;
+        color: var(--text-secondary) !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.25rem !important;
+      }
+      .confirm-email-badge {
+        font-size: 0.75rem !important;
+        padding: 0.25rem 0.6rem !important;
+      }
+      .confirm-details-row .detail-label,
+      .confirm-details-row .detail-value {
+        font-size: 0.775rem !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -707,7 +784,42 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/projects-data.js?v=2"></script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/projects-data.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
+  <script>
+    // Embedded override guaranteeing instant single-line email badge layout on mobile
+    window.openConfirmationModal = function(name, email) {
+      const modal = document.getElementById('confirmationModal');
+      const messageEl = document.getElementById('confirmModalMessage');
+      const detailsEl = document.getElementById('confirmDetailsBox');
+
+      if (messageEl) {
+        messageEl.innerHTML = `Thank you, <strong>${name}</strong>! Your inquiry has been sent directly to Albin Joy. I will review your project requirements and get in touch with you at <strong class="confirm-email-highlight" style="color: #06b6d4; font-weight: 700; white-space: nowrap !important; display: inline-block !important; word-break: keep-all !important; font-size: 0.9em;">${email}</strong> shortly.`;
+      }
+
+      if (detailsEl) {
+        detailsEl.innerHTML = `
+          <div class="confirm-details-row" style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%;">
+            <span class="detail-label" style="color: var(--text-muted); font-size: 0.825rem; white-space: nowrap !important; flex-shrink: 0;">Recipient</span>
+            <strong class="detail-value" style="color: var(--text-primary); font-size: 0.825rem; font-weight: 600; white-space: nowrap !important; text-align: right; flex-shrink: 0;">Albin Joy</strong>
+          </div>
+          <div class="confirm-details-row" style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%;">
+            <span class="detail-label" style="color: var(--text-muted); font-size: 0.825rem; white-space: nowrap !important; flex-shrink: 0;">Delivery Status</span>
+            <strong class="detail-value status-success" style="color: #10b981; background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.28); padding: 0.2rem 0.55rem; border-radius: 9999px; font-size: 0.775rem; font-weight: 600; white-space: nowrap !important; display: inline-flex; align-items: center; gap: 0.35rem; text-align: right; flex-shrink: 0;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span style="white-space: nowrap !important;">Sent Successfully</span>
+            </strong>
+          </div>
+        `;
+      }
+
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    };
+  </script>
 </body>
 </html>
